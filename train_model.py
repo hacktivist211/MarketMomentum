@@ -323,9 +323,9 @@ def train_xgboost_model(
     plt.tight_layout()
     
     # Ensure directory exists
-    os.makedirs(r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost', exist_ok=True)
+    os.makedirs(r'Create a new directory', exist_ok=True)
     
-    plt.savefig(r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost\feature_importance.png')
+    plt.savefig(r'Enter the same new directory path\feature_importance.png')
     plt.close()
     
     # Prediction vs Actual Plot
@@ -337,7 +337,7 @@ def train_xgboost_model(
     plt.ylabel('Stock Price')
     plt.legend()
     plt.tight_layout()
-    plt.savefig(r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost\prediction_comparison.png')
+    plt.savefig(r'Enter the same new directory path\prediction_comparison.png')
     plt.close()
     
     print("\nTop 10 Most Important Features:")
@@ -346,7 +346,7 @@ def train_xgboost_model(
     
     # Save the model
     import joblib
-    model_path = r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost\final_xgboost_model.joblib'
+    model_path = r'Output model path'
     joblib.dump(model, model_path)
     print(f"Final model saved to {model_path}")
     
@@ -357,7 +357,7 @@ def main():
     Main execution function to orchestrate the entire process
     """
     # File path for your stock data
-    file_path = r"E:\CodeFusion\combined_stock_data.csv"
+    file_path = r"File path"
     
     # Load and preprocess data
     processed_data = load_and_preprocess_data(file_path)
