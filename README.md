@@ -55,14 +55,14 @@ Navigate to the project directory and install the required Python packages. You 
 For example, your `requirements.txt` file could look something like this:
 
 ```
-pandas
-numpy
-matplotlib
-xgboost
-scikit-learn
-seaborn
-tensorflow
-keras
+pandas==1.5.3
+numpy==1.22.4
+matplotlib==3.5.3
+xgboost==1.7.5
+scikit-learn==1.1.2
+seaborn==0.11.2
+tensorflow==2.10.0
+keras==2.10.0
 ```
 
 To install these dependencies, run the following command in your terminal (make sure you're in the `stock-prediction` directory):
