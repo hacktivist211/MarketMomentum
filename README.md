@@ -77,6 +77,11 @@ Alternatively, you can install each package manually with:
 pip install pandas numpy matplotlib xgboost scikit-learn seaborn tensorflow keras
 ```
 
+Alternatively, you can install each package manually Conds:
+```bash
+conda install pandas=1.3.3 numpy=1.21.2 matplotlib=3.4.3 scikit-learn=0.24.2 seaborn=0.11.2
+conda install -c conda-forge tensorflow=2.6.0 keras=2.6.0 xgboost=1.5.1
+```
 ### Step 5: Download the Dataset
 
 Before running the model, you need the dataset. In this case, you’ll have a folder containing **CSV files** with stock data. 
