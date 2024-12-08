@@ -77,7 +77,7 @@ Alternatively, you can install each package manually with:
 pip install pandas numpy matplotlib xgboost scikit-learn seaborn tensorflow keras
 ```
 
-Alternatively, you can install each package manually Conds:
+Alternatively, you can install each package manually Conda:
 ```bash
 conda install pandas=1.3.3 numpy=1.21.2 matplotlib=3.4.3 scikit-learn=0.24.2 seaborn=0.11.2
 conda install -c conda-forge tensorflow=2.6.0 keras=2.6.0 xgboost=1.5.1
