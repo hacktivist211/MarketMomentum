@@ -191,7 +191,7 @@ def define_xgboost_dataset(data):
     X_test = scaler.transform(X_test)
 
     # Save the scaler
-    scaler_path = r"C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost\scaler.joblib"
+    scaler_path = r"{path for scaler}"
     joblib.dump(scaler, scaler_path)
     print(f"Scaler saved to {scaler_path}")
 
@@ -329,9 +329,9 @@ def train_xgboost_model(
     plt.tight_layout()
     
     # Ensure directory exists
-    os.makedirs(r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost', exist_ok=True)
+    os.makedirs(r'{path for directory}', exist_ok=True)
     
-    plt.savefig(r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost\feature_importance.png')
+    plt.savefig(r'{path for graph}')
     plt.close()
     
     # Prediction vs Actual Plot
@@ -343,7 +343,7 @@ def train_xgboost_model(
     plt.ylabel('Stock Price')
     plt.legend()
     plt.tight_layout()
-    plt.savefig(r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost\prediction_comparison.png')
+    plt.savefig(r'{path for prediction comparision}')
     plt.close()
     
     print("\nTop 10 Most Important Features:")
@@ -352,7 +352,7 @@ def train_xgboost_model(
     
     # Save the model
     import joblib
-    model_path = r'C:\Users\Niraj\Documents\Projects\StockPrediction\XGBoost\final_xgboost_model.joblib'
+    model_path = r'{model path}'
     joblib.dump(model, model_path)
     print(f"Final model saved to {model_path}")
     
